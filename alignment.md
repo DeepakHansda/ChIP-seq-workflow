@@ -34,7 +34,7 @@ reverting back to the parent directory.
 
 Now that we have created bowtie2 index for our reference genome, we can align our fastq reads to it.  
 Since we have trimmed our fastq reads (please look at the "_trimmed.fq.gz" files in "data" directory)  
-we will use the trimmed ones; -p argument is for the nos. of cores to be used. set this value as per the availability of cores in your system.  
+we will use the trimmed ones; -p argument is for the nos. of cores to be used. set this value as per the availability of cores in your system. Now wait for 1-2 hrs.  
   
 ```bash
 for sample in NRF1_CHIP_WT_1 NRF1_CHIP_WT_2 NRF1_INPUT_WT NRF1_CHIP_TKO_1 NRF1_CHIP_TKO_2 NRF1_INPUT_TKO H3K27AC_CHIP_WT_1 H3K27AC_CHIP_WT_2 H3K27AC_CHIP_TKO_1 H3K27AC_CHIP_TKO_2
