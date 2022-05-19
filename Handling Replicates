@@ -1,4 +1,4 @@
-### Investigating Replicate with Irreproducible Discovery Rate (IDR):  
+#Investigating Replicate with Irreproducible Discovery Rate (IDR):  
 As with any expriment it is always a good idea to have multiple measurements of any object of interest. If we are measuring any genuine effect in  
 some experiment, we should get similar observation if we have to repeat the experiment. similary, if we observing a peak in a particular genomic region in a chip-seq experiment  
 we should get almost equivalent measure of peak for that region in a replicate experiment. And ideally, this observation of peak mapping in replicate  
@@ -7,4 +7,4 @@ on their reproducibility across replicates. It is a statistical framework and th
 with lenient threshold. Doing this will generate true genuine `peaks` as well as some noise `peaks`. If we rank `peaks` from all the replicate and look  
 for the correlation, we observe that the gennuine `peaks` are all well correlated while noise `peaks` are not.  
 
-#### we will look at the consistency between replicates:  
+## we will look at the consistency between replicates:  
