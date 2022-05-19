@@ -8,3 +8,19 @@ with lenient threshold. Doing this will generate true genuine `peaks` as well as
 for the correlation, we observe that the gennuine `peaks` are all well correlated while noise `peaks` are not.  
 
 ## we will look at the consistency between replicates:  
+fist step is to rerun `macs2` with relaxed p-value to identify lot many peaks; default is 1e-5, but we take 1e-3  
+```bash
+control=NRF1_INPUT_TKO
+for sample in NRF1_CHIP_TKO_1 NRF1_CHIP_TKO_2   
+	do
+	macs2 callpeak -t reads/${sample}.bam\
+	-c reads/${control}.bam \
+	-f BAM \
+	-g mm \
+	 --outdir chipseq-project/IDR/peaks/ \
+	 --bdg \
+	 -p 1e-3 \
+	 -n ${sample}  2> chipseq-project/IDR/logs/${sample}_macs2_report.log
+	done
+  ```
+  
