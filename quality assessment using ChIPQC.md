@@ -27,6 +27,11 @@ ChIPQCreport(chipObj, reportName="ChIP_QC_report: NRF1_wt and NRF1_TKO",
  ```
  
 
+ 
+ 
+ 
+ 
+
 
 
 
